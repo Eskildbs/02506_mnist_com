@@ -12,7 +12,7 @@ by optimizing in the direction of the average negative gradient direction of all
 - Batch size of 64
 - learning rate of 0.1
 - Train/validation-split = 0.8 (48.000/12.000)
-- Trained for 2000 epochs
+- Trained for 2500 epochs
 
 Requirements
 - Numpy
@@ -31,6 +31,7 @@ To train networks
 - Set epochs to be non-zero
 - Set batch size
 - Set learning rate
+- Set number of layers and neurons as an array input to FeedForwardNetwork(...)
 - (optional) load a pre-trained model
 - choose a path to save the trained network
 2) Change working directory to this folder

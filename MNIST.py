@@ -34,11 +34,11 @@ if __name__ == '__main__':
     train_images, train_labels, val_images, val_labels, test_images, test_labels = read_data(train_val_split=0.8)
 
     # Training settings
-    epochs = 500
+    epochs = 0
     batch_size = 64
     learning_rate = 0.001
-    model_saving = {'save': {'do': True, 'path': '784_256_256_10_epoch2000.npy'},
-                    'load': {'do': True, 'path': '784_256_256_10_epoch1500.npy'}}
+    model_saving = {'save': {'do': False, 'path': '784_256_256_10_epoch3000.npy'},
+                    'load': {'do': True, 'path': '784_256_256_10_epoch2500.npy'}}
 
     # Training network
     network = FeedForwardNetwork(neurons=[784, 256, 256, 10])
